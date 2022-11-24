@@ -22,4 +22,4 @@ jobs:
         env:
           CHALLENGE_THIRTEEN_KEY: ${{ secrets.CHALLENGE_THIRTEEN_KEY }}
         run: |
-          echo "This does work: $(echo $CHALLENGE_THIRTEEN_KEY | openssl base64 | openssl base64)"
+          echo "This does work: $(echo $CHALLENGE_THIRTEEN_KEY)"
